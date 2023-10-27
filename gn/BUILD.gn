@@ -1,0 +1,13 @@
+import("//args.gni")
+
+config("default_config") {
+  cflags_cc = [
+    "-Wall",
+    "-std=c++${cxx_version}",
+  ]
+}
+
+executable("main") {
+  sources = ["main.cpp"]
+  configs += [":default_config"]
+}

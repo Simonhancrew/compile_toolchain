@@ -1,0 +1,3 @@
+declare_args() {
+  cxx_version = 17
+}
